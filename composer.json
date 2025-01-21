@@ -1,0 +1,40 @@
+{
+    "name": "nextdeveloper/installer",
+    "keywords": ["nextdeveloper", "installer", "laravel"],
+    "description": "NextDeveloper Installer package should be used to install NextDeveloper packages",
+    "type": "project",
+    "license": "MIT",
+    "issues": "https://github.com/nextdeveloper-nl/installer/issues",
+    "authors": [
+        {
+            "name": "Harun Bariş Bulut",
+            "email": "baris.bulut@plusclouds.com"
+        },
+        {
+            "name": "IBRAHIM KHALIL ATTEIB YACOUB",
+            "email": "ibrahim.yakoub@plusclouds.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/prompts": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NextDeveloper\\Installer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NextDeveloper\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
